@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+
+    <form action="/post" method="POST" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input type="text" name="title" class="form-control" required>
+        </div>
+
+        <div class="mb-3"> 
+          <label for="content" class="form-label">Content</label>
+          <input type="text" name="content" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="uploadFile" class="form-label">Add File</label>
+          <input type="file" name="uploadFile" class="form-control" required>
+        </div>
+        
+
+        <button type="submit" class="btn btn-primary">ADD</button>
+    </form>
+
+    <%- include('partials/script') %>
+</body>
+</html>

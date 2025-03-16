@@ -1,0 +1,5 @@
+ <input type="hidden" name="blogId" value="<%= blog._id %>"> 
+ this helps to pass id which is used inside the create content 
+
+ // req.user = it was just passing payload from token in middleware  ,
+ so if we want user data so fetch data and then use 
